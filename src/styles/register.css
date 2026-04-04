@@ -71,6 +71,7 @@ body {
   padding-bottom:60px ;
   padding-top:60px ;
   gap: 16px;
+  position: relative;
 }
 /* Auth Layout End */
 
@@ -80,6 +81,26 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
+.back-home-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  text-decoration: none;
+  color: #99FF33;
+  top: 80px;
+  left: 30px;
+}
+/* .back-to-home {
+  color: white;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.back-to-home a {
+  color: #99FF33;
+} */
 
 .register-title {
   color: white;
@@ -161,7 +182,7 @@ body {
   outline: none;
   color: white;
   font-family: 'Google Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
  
 .input-group input::placeholder {
@@ -276,25 +297,44 @@ body {
 }
 /* Button End */
 
-.back-to-home {
-  color: white;
-  align-self: center;
-  margin-top: 10px;
+
+/* responsive needs */
+
+@media (max-width: 1533px) {
+  .auth-banner {
+    margin: 50px;
+  }
 }
 
-.back-to-home a {
-  color: #99FF33;
+@media (max-width: 1080px) {
+  .auth-banner {
+    margin: 30px;
+  }
+  .auth-logo {
+    width: 90px;
+  }
+  .auth-logo-text {
+    font-size: 40px;
+  }
+  .register-content {
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .back-home-btn {
+    left: 10px;
+  }
 }
 
 @media (max-width: 768px) {
   .auth {
-    display: flex;
     flex-direction: column;
   }
-
+  .auth-brand {
+    gap: 4px;
+  }
   .auth-banner {
     flex: 1;
-    padding: 30px;
+    padding: 20px 20px 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,5 +343,47 @@ body {
     margin: 20px;
     position: relative;
     overflow: hidden;
+  }
+  .register-title {
+    padding-left: 12px;
+  }
+  .login-question {
+    padding-left: 12px;
+    padding-bottom: 24px;
+  }
+  .register-content {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+  .checkbox-group {
+    padding-bottom: 24px;
+  }
+  .back-home-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .auth-logo-text {
+    font-size: 32px;
+  }
+  .register-title {
+    font-size: 24px;
+  }
+  .login-question {
+    font-size: 12px;
+  }
+  .input-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .checkbox-group label {
+    font-size: 12px;
+  }
+  .checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
   }
 }

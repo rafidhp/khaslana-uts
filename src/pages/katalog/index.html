@@ -3,9 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog - Khaslana</title>
+    <link rel="shortcut icon" href="./../../../assets/khaslana-logo-green.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../../styles/katalog.css">   
+    <title>Khaslana</title>
 </head>
 <body>
-    
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="left-navbar">
+            <img src="./../../../assets/Khaslana.svg" alt="logo-khaslana" class="navbar-logo">
+            <div class="logo name">Khaslana</div>
+        </div>
+        <div class="center-navbar">
+            <ul>
+                <li><a href="./index.html">Beranda</a></li>
+                <li><a href="/src/pages/katalog/index.html">Katalog</a></li>
+                <li><a href="/src/pages/umkm/index.html">UMKM</a></li>
+                <li><a href="/src/pages/komunitas/index.html">Komunitas</a></li>
+            </ul>
+        </div>
+        <div class="right-navbar">
+            <a href="#"><img src="./../../../assets/notif.svg" alt="Notifikasi"></a>
+            <a href="#"><img src="./../../../assets/nav-cart.svg" alt="Cart"></a>
+            <a href="#"><img src="./../../../assets/Ai.jpg" alt="Profile"></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <main class="main">
+        <!-- Katalog Hero Start -->
+        <section class="katalog-hero">
+            <div class="katalog-hero-text">
+                <h1>
+                    <span class="green-text-header">Katalog Produk</span>
+                    Pilihan Kami.
+                </h1>
+                <p>
+                    Mendukung pertumbuhan UMKM lokal melalui teknologi. 
+                    Jelajahi karya tangan terbaik dari pengrajin dan produsen 
+                    di seluruh Indonesia.
+                </p>
+            </div>
+            <div class="katalog-search-bar">
+                <label for="katalog-search">
+                    <img src="./../../../assets/search_icon.svg" alt="seacrh bar" class="search-icon">
+                </label>
+                <input type="text" name="seacrh-bar" id="seacrh-bar" placeholder="Apa yang anda cari?">
+            </div>
+            <div class="katalog-filter">
+                <button class="filter-btn filter-active">Semua</button>
+                <button class="filter-btn">Kerajinan</button>
+                <button class="filter-btn">Fashion</button>
+                <button class="filter-btn">FnB</button>
+                <button class="filter-btn">Jasa</button>
+            </div>
+        <!-- Katalog Hero End -->
+
+        <!-- Katalog Products Start -->
+        </section>
+        <section class="katalog-products">
+            <div class="katalog-featured">
+                <div class="katalog-featured-main">
+                    <img src="./../../../assets/batik solo.png" alt="Batik Tulis Premium Solo">
+                    <div class="featured-overlay">
+                        <span class="badge-bestseller">Best Seller</span>
+                        <div class="featured-info">
+                            <h3>Batik Tulis Premium Solo</h3>
+                            <p class="featured-price">Rp 1.250.000</p>
+                        </div>
+                        <button class="featured-card-btn">
+                            <img src="./../../../assets/cart_main.svg" alt="add to cart">
+                        </button>
+                    </div>
+                </div>
+                <div class="katalog-featured-side">
+                    <div class="katalog-side-card">
+                        <span class="badge-new">New</span>
+                        <img src="./../../../assets/sambal.png" alt="Sambal Bajak Ibu Risma">
+                    </div>
+                    <div class="side-card-info">
+                        <h4>Sambal Bajak Ibu Risma</h4>
+                        <p class="side-card-desc">Resep tradisional autentik 250gr</p>
+                        <div class="side-card-bottom">
+                            <span class="side-card-price">Rp 45.000</span>
+                            <button class="side-card-btn">
+                                <img src="./../../../assets/cart_side.svg" alt="add to cart">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="katalog-grid">
+                <div class="katalog-card">
+                    <div class=" katalog-card-img">
+                        <img src="./../../../assets/vase-keramik.png" alt="Vase Keramik Kasongan">
+                    </div>
+                    <div class="katalog-card-info">
+                        <h4 class="katalog-card-name">Vase Keramik Kasongan</h4>
+                        <p class="katalog-card-price">Rp 185.000</p>
+                    </div>
+                    <div class="katalog-cart">
+                        <p>+ Add to Cart</p>
+                    </div>
+                </div>
+
+                <div class="katalog-card">
+                    <div class=" katalog-card-img">
+                        <img src="./../../../assets/sendal-garut.png" alt="Sendal Kulit Garut">
+                    </div>
+                    <div class="katalog-card-info">
+                        <h4 class="katalog-card-name">Sendal Kulit Garut</h4>
+                        <p class="katalog-card-price">Rp 320.000</p>
+                    </div>
+                    <div class="katalog-cart">
+                        <p>+ Add to Cart</p>
+                    </div>
+                </div>
+
+                <div class="katalog-card">
+                    <div class=" katalog-card-img">
+                        <img src="./../../../assets/kopi-gayo.png" alt="Kopi Arabica Gayo">
+                    </div>
+                    <div class="katalog-card-info">
+                        <h4 class="katalog-card-name">Kopi Arabica Gayo</h4>
+                        <p class="katalog-card-price">Rp 85.000</p>
+                    </div>
+                    <div class="katalog-cart">
+                        <p>+ Add to Cart</p>
+                    </div>
+                </div>
+
+                <div class="katalog-card">
+                    <div class=" katalog-card-img">
+                        <img src="./../../../assets/anting-perak.png" alt="Anting Perak Kotagede">
+                    </div>
+                    <div class="katalog-card-info">
+                        <h4 class="katalog-card-name">Anting Perak Kotagede</h4>
+                        <p class="katalog-card-price">Rp 450.000</p>
+                    </div>
+                    <div class="katalog-cart">
+                        <p>+ Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Katalog Products End -->
+
+            <!-- Pagination Start -->
+            <div class="katalog-pagination">
+                <a href="#" class="page-btn page-arrow">&lt</a>
+                <a href="#" class="page-btn">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn" aria-disabled="true">...</a>
+                <a href="#" class="page-btn">12</a>
+                <a href="#" class="page-btn page-arrow">&gt</a>
+            </div>
+            <!-- Pagination End -->
+        </section>
+     </main>
+
+     <footer class="footer">
+        <div class="fooetr-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./../../../assets/Khaslana.svg" alt="Khaslana logo" class="footer-logo-img">
+                        <span class="footer-logo-name">Khaslana</span>
+                    </div>
+                    <p class="footer-desc">
+                        Khaslana adalah platform digital kolaboratif yang didedikasikan sebagai wadah pemberdayaan bagi UMKM lokal Indonesia.
+                         Platform ini hadir untuk menjembatani produk-produk kreatif hasil karya anak bangsa—mulai dari kuliner, kerajinan tangan, 
+                         hingga fashion—dengan pasar yang lebih luas melalui ekosistem yang modern dan inklusif. 
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <img src="./../../../assets/ig.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Youtube">
+                            <img src="./../../../assets/yt.svg" alt="Youtube">
+                        </a>
+                        <a href="#" class="social-btn" aria-label="linkedIn">
+                            <img src="./../../../assets/linkedin.svg" alt="linkedIn">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links group">
+                    <div class="footer-links-column">
+                         <h5 class="footer-col-title">Layanan</h5>
+                        <ul>
+                            <li><a href="/src/pages/katalog/index.html">Katalog</a></li>
+                            <li><a href="/src/pages/umkm/index.html">List UMKM</a></li>
+                            <li><a href="/src/pages/komunitas/index.html">Komunitas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                         <h5 class="footer-col-title">Sumber Daya</h5>
+                        <ul>
+                            <li><a href="/src/pages/katalog/index.html">Kebijakan Privasi</a></li>
+                            <li><a href="/src/pages/umkm/index.html">Syarat dan Ketentuan</a></li>
+                            <li><a href="/src/pages/komunitas/index.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
 </body>
 </html>

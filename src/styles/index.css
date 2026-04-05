@@ -67,6 +67,12 @@ a {
     gap: 12px;
 }
 
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar-right ul {
     display: flex;
     flex-direction: row;
@@ -98,7 +104,7 @@ a {
 }
 
 .navbar-right li a:hover {
-    color: white;
+    color: #99FF33;
 }
 
 .navbar-right li a:hover::after {
@@ -106,7 +112,7 @@ a {
 }
 
 .navbar-right li a.navbar-active {
-    color: white;
+    color: #99FF33;
 }
 
 .navbar-right li a.navbar-active::after {
@@ -118,6 +124,56 @@ a {
     background-color: #99FF33;
     padding: 12px 26px;
     border-radius: 100px;
+}
+
+.navbar-middle ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.navbar-middle li a {
+    position: relative;
+    color: #989898;
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+
+.navbar-middle li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms cubic-bezier(.4,0,.2,1);
+}
+
+.navbar-middle li a:hover {
+    color: #99FF33;
+}
+
+.navbar-middle li a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-middle li a.navbar-active {
+    color: #99FF33;
+}
+
+.navbar-middle li a.navbar-active::after {
+    transform: scaleX(1);
+}
+
+.navbar-avatar {
+    border-radius: 999px;
 }
 
 .navbar-toggle {
@@ -888,6 +944,16 @@ footer a:hover {
         left: -200px;
         z-index: 1;
         transform: translateY(-50%);
+    }
+
+    .navbar-middle ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        gap: 25px;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
 

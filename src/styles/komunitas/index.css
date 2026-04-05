@@ -116,7 +116,7 @@ button {
     gap: 20px;
     height: auto;
     min-height: 100vh;
-    padding: 0px 55px;
+    padding: 20px 55px;
     box-sizing: border-box;
 }
 
@@ -297,6 +297,47 @@ button {
     font-size: 12px;
 }
 
+@media (min-width: 1533px) {
+    .community-header {
+        padding: 120px 75px 40px 75px;
+    }
+
+    .community-header h2 {
+        font-size: 40px;
+    }
+
+    .community-header p {
+        color: #ADAAAA;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    .community-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 75px;
+        box-sizing: border-box;
+    }
+
+    .post-user h6 {
+        color: white;
+        font-weight: 200;
+        font-size: 18px;
+    }
+
+    .post-user p {
+        color: #888;
+        font-size: 13px;
+    }
+
+    .post-content p {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .topic-contributor {
         display: none;
@@ -305,11 +346,11 @@ button {
 
 @media (max-width: 500px) {
     .community-header {
-        padding: 90px 25px;
+        padding: 90px 25px 20px 25px;
     }
 
     .community-container {
-        padding: 0 20px;
+        padding: 20px 20px;
     }
 
     .post-bottom {

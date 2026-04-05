@@ -26,7 +26,7 @@
                 </li>
                 <li><a href="./../../../index.html">Beranda</a></li>
                 <li><a href="./../katalog/index.html" class="navbar-active">Katalog</a></li>
-                <li><a href="#">UMKM</a></li>
+                <li><a href="./../umkm/index.html">UMKM</a></li>
                 <li><a href="./../komunitas/index.html">Komunitas</a></li>
             </ul>
         </div>
@@ -57,7 +57,7 @@
             </div>
             <div class="katalog-search-bar">
                 <label for="katalog-search">
-                    <img src="./../../../assets/search_icon.svg" alt="seacrh bar" class="search-icon">
+                    <img src="./../../../assets/katalog/search_icon.svg" alt="seacrh bar" class="search-icon">
                 </label>
                 <input type="text" name="seacrh-bar" id="seacrh-bar" placeholder="Apa yang anda cari?">
             </div>
@@ -75,7 +75,7 @@
         <section class="katalog-products">
             <div class="katalog-featured">
                 <div class="katalog-featured-main">
-                    <img src="./../../../assets/batik solo.png" alt="Batik Tulis Premium Solo">
+                    <img src="./../../../assets/katalog/batik solo.png" alt="Batik Tulis Premium Solo">
                     <div class="featured-overlay">
                         <span class="badge-bestseller">Best Seller</span>
                         <div class="featured-info">
@@ -83,14 +83,14 @@
                             <p class="featured-price">Rp 1.250.000</p>
                         </div>
                         <button class="featured-card-btn">
-                            <img src="./../../../assets/cart_main.svg" alt="add to cart">
+                            <img src="./../../../assets/katalog/cartmain.svg" alt="add to cart">
                         </button>
                     </div>
                 </div>
                 <div class="katalog-featured-side">
                     <div class="katalog-side-card">
                         <span class="badge-new">New</span>
-                        <img src="./../../../assets/sambal.png" alt="Sambal Bajak Ibu Risma">
+                        <img src="./../../../assets/katalog/sambal.png" alt="Sambal Bajak Ibu Risma">
                     </div>
                     <div class="side-card-info">
                         <h4>Sambal Bajak Ibu Risma</h4>
@@ -98,7 +98,7 @@
                         <div class="side-card-bottom">
                             <span class="side-card-price">Rp 45.000</span>
                             <button class="side-card-btn">
-                                <img src="./../../../assets/cart_side.svg" alt="add to cart">
+                                <img src="./../../../assets/katalog/cartside.svg" alt="add to cart">
                             </button>
                         </div>
                     </div>
@@ -165,20 +165,20 @@
 
             <!-- Pagination Start -->
             <div class="katalog-pagination">
-                <a href="#" class="page-btn page-arrow">&lt</a>
-                <a href="#" class="page-btn">1</a>
+                <a href="#" class="page-btn page-arrow">&lt;</a>
+                <a href="#" class="page-btn page-active">1</a>
                 <a href="#" class="page-btn">2</a>
                 <a href="#" class="page-btn">3</a>
-                <a href="#" class="page-btn" aria-disabled="true">...</a>
+                <span class="page-dots">...</span>
                 <a href="#" class="page-btn">12</a>
-                <a href="#" class="page-btn page-arrow">&gt</a>
+                <a href="#" class="page-btn page-arrow">&gt;</a>
             </div>
             <!-- Pagination End -->
         </section>
      </main>
 
      <footer class="footer">
-        <div class="fooetr-container">
+        <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
                     <div class="footer-logo">
@@ -192,23 +192,23 @@
                     </p>
                     <div class="footer-social">
                         <a href="#" class="social-btn" aria-label="Instagram">
-                            <img src="./../../../assets/ig.svg" alt="Instagram">
+                            <img src="./../../../assets/katalog/ig.svg" alt="Instagram">
                         </a>
                         <a href="#" class="social-btn" aria-label="Youtube">
-                            <img src="./../../../assets/yt.svg" alt="Youtube">
+                            <img src="./../../../assets/katalog/yt.svg" alt="Youtube">
                         </a>
                         <a href="#" class="social-btn" aria-label="linkedIn">
-                            <img src="./../../../assets/linkedin.svg" alt="linkedIn">
+                            <img src="./../../../assets/katalog/linkedin.svg" alt="linkedIn">
                         </a>
                     </div>
                 </div>
-                <div class="footer-links group">
+                <div class="footer-links-group">
                     <div class="footer-links-column">
                          <h5 class="footer-col-title">Layanan</h5>
                         <ul>
-                            <li><a href="./../katalog/index.html">Katalog</a></li>
-                            <li><a href="./../umkm/index.html">List UMKM</a></li>
-                            <li><a href="./../komunitas/index.html">Komunitas</a></li>
+                            <li><a href="/src/pages/katalog/index.html">Katalog</a></li>
+                            <li><a href="/src/pages/umkm/index.html">List UMKM</a></li>
+                            <li><a href="/src/pages/komunitas/index.html">Komunitas</a></li>
                         </ul>
                     </div>
                     <div class="footer-links-column">
@@ -216,13 +216,43 @@
                         <ul>
                             <li><a href="#">Kebijakan Privasi</a></li>
                             <li><a href="#">Syarat dan Ketentuan</a></li>
-                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                         <h5 class="footer-col-title">Kontak</h5>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <span class="contact-icon">
+                                    <img src="./../../../assets/katalog/location.svg" alt="location_icon">
+                                </span>
+                                <span>Cibiru, Jawa Barat, Indonesia</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon">
+                                    <img src="./../../../assets/katalog/phone.svg" alt="phone_icon">
+                                </span>
+                                <span>+62 858 6028 2313</span>
+                            </li>
+                            <li>
+                                <span class="contact-icon">
+                                    <img src="./../../../assets/katalog/mail.svg" alt="mail_icon">
+                                </span>
+                                <span>hello@khaslana.id</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Khaslana UMKM Digital.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Kebijakan Privasi</a>
+                </div>
+            </div>
         </div>
-     </footer>
+    </footer>
 
     <script src="./../../scripts/katalog/detail-product.js"></script>
 </body>

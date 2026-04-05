@@ -3,9 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kominutas - Khaslana</title>
+    <title>Komunitas - Khaslana</title>
+    <link rel="stylesheet" href="./../../styles/index.css">
+    <link rel="stylesheet" href="./../../styles/komunitas/index.css">
 </head>
 <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img
+                src="./../../../assets/Khaslana.svg"
+                alt="Logo Khaslana"
+                class="navbar-logo"
+            />    
+            <div class="logo-name">Khaslana</div>
+        </div>
+        <div class="navbar-toggle">
+            <img src="./../../../assets/hamburger.png" alt="menu">
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a href="./../../../index.html">Beranda</a></li>
+                <li><a href="./../katalog/index.html">Katalog</a></li>
+                <li><a href="./index.html"  class="navbar-active">Komunitas</a></li>
+                <a href="./../auth/register.html" class="btn-primary">
+                    Ayo Mulai
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <section class="community-header">
+        <h2>Terhubung, Berkolaborasi, dan Berdaya Bersama.</h2>
+        <p>Bagikan perjalanan bisnismu, temukan solusi bersama, dan tumbuh lebih kuat dalam ekosistem komunitas Khaslana</p>
+    </section>
     
+    <div class="community-container">
+        <div class="posts">
+            <div class="create-post">
+                <div class="post-top">
+                    <img src="./../../../assets/komunitas/user-avatar.png" alt="Profile" class="avatar">
+                    <input type="text" placeholder="Bagikan strategi pertumbuhan Anda hari ini..." class="main-input">
+                </div>
+
+                <div class="post-bottom">
+                    <div class="post-options">
+                        <label class="opt-btn">
+                            <input type="file" accept="image/*">
+                            <img src="./../../../assets/komunitas/gambar.svg" alt=""> Gambar
+                        </label>
+
+                        <label class="opt-btn">
+                            <input type="file" accept="video/*">
+                            <img src="./../../../assets/komunitas/video.svg" alt=""> Video
+                        </label>
+
+                        <label class="opt-btn">
+                            <input type="file" accept=".pdf,.doc,.docx">
+                            <img src="./../../../assets/komunitas/artikel.svg" alt=""> Artikel
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-publish">Terbitkan</button>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-profile">
+                    <div class="post-avatar">
+                         <img src="./../../../assets/komunitas/user-avatar.png" alt="Profile" class="avatar">
+                    </div>
+                    <div class="post-user">
+                        <h6>Dewi Lestari</h6>
+                        <p>3 JAM YANG LALU</p>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <p>Baru saja menerapkan sistem manajemen inventaris baru di gudang kami di Bandung. Efisiensi meningkat 30% dalam minggu pertama! Kuncinya adalah integrasi data real-time. Ada yang butuh rekomendasi software logistik lokal? 🚀</p>
+                    <img src="./../../../assets/komunitas/post-img.png" alt="" class="post-img">
+                </div>
+
+                <div class="post-btn">
+                    <div class="post-options">
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/like.svg" alt=""> 124
+                        </button>
+
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/comment.svg" alt=""> 42
+                        </button>
+
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/share.svg" alt=""> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-profile">
+                    <div class="post-avatar">
+                         <img src="./../../../assets/komunitas/user-avatar.png" alt="Profile" class="avatar">
+                    </div>
+                    <div class="post-user">
+                        <h6>Dewi Lestari</h6>
+                        <p>3 JAM YANG LALU</p>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <p>Baru saja menerapkan sistem manajemen inventaris baru di gudang kami di Bandung. Efisiensi meningkat 30% dalam minggu pertama! Kuncinya adalah integrasi data real-time. Ada yang butuh rekomendasi software logistik lokal? 🚀</p>
+                    <img src="./../../../assets/komunitas/post-img.png" alt="" class="post-img">
+                </div>
+
+                <div class="post-btn">
+                    <div class="post-options">
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/like.svg" alt=""> 124
+                        </button>
+
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/comment.svg" alt=""> 42
+                        </button>
+
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/share.svg" alt=""> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-profile">
+                    <div class="post-avatar">
+                         <img src="./../../../assets/komunitas/user-avatar.png" alt="Profile" class="avatar">
+                    </div>
+                    <div class="post-user">
+                        <h6>Dewi Lestari</h6>
+                        <p>3 JAM YANG LALU</p>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <p>Baru saja menerapkan sistem manajemen inventaris baru di gudang kami di Bandung. Efisiensi meningkat 30% dalam minggu pertama! Kuncinya adalah integrasi data real-time. Ada yang butuh rekomendasi software logistik lokal? 🚀</p>
+                    <img src="./../../../assets/komunitas/post-img.png" alt="" class="post-img">
+                </div>
+
+                <div class="post-btn">
+                    <div class="post-options">
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/like.svg" alt=""> 124
+                        </button>
+
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/comment.svg" alt=""> 42
+                        </button>
+
+                        <button class="post-opt-btn">
+                            <img src="./../../../assets/komunitas/share.svg" alt=""> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="topic-contributor">
+            <div class="topic-card">
+                <div class="topic-header">
+                    <img src="./../../../assets/komunitas/topik.svg" alt="">
+                    <p>Topik Populer</p>
+                </div>
+
+                <a href="#" class="topic-btn">
+                    <h5>#DIGITALMARKETING</h5>
+                    <p>1.2K Postingan minggu ini</p>
+                </a>
+
+                <a href="#" class="topic-btn">
+                    <h5>#SUBSIDIPEMERINTAH</h5>
+                    <p>700 Postingan minggu ini</p>
+                </a>
+
+                <a href="#" class="topic-btn">
+                    <h5>#SCALEUPINDO</h5>
+                    <p>430 Postingan minggu ini</p>
+                </a>
+            </div>
+
+            <div class="contributor-card">
+                <div class="contributor-header">
+                    <img src="./../../../assets/komunitas/kontributor.svg" alt="">
+                    <p>Top Kontributor</p>
+                </div>
+
+                <div class="contributor-btn">
+                    <div class="contributor-avatar">
+                        <img src="./../../../assets/komunitas/user-avatar.png" alt="Profile" class="avatar">
+                    </div>
+                    <div class="contributor-label">
+                        <h5>Maya Putri</h5>
+                        <p>MVP STRATEGI</p>
+                    </div>
+                </div>
+
+                <div class="contributor-btn">
+                    <div class="contributor-avatar">
+                        <img src="./../../../assets/komunitas/user-avatar.png" alt="Profile" class="avatar">
+                    </div>
+                    <div class="contributor-label">
+                        <h5>Rizky Hakim</h5>
+                        <p>PAKAR LOGISTIK</p>
+                    </div>
+                </div>
+
+                <div class="contributor-btn">
+                    <div class="contributor-avatar">
+                        <img src="./../../../assets/komunitas/user-avatar.png" alt="Profile" class="avatar">
+                    </div>
+                    <div class="contributor-label">
+                        <h5>Agung WhatsApp</h5>
+                        <p>GURU FINANSIAL</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy;2026 Khaslana</p>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <a href="#">
+                    <li>Tentang Kami</li>
+                </a>
+                <a href="#">
+                    <li>Kebijakan Privasi</li>
+                </a>
+                <a href="#">
+                    <li>Bantuan</li>
+                </a>
+                <a href="#">
+                    <li>Kontak</li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./../../../src/scripts/index.js"></script>
 </body>
 </html>

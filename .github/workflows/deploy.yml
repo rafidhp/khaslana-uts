@@ -15,31 +15,36 @@ jobs:
         run: |
           mkdir -p deploy
           
-          # Copy assets
+          # copy assets
           cp -r assets deploy/assets
           
-          # Copy scripts
-          mkdir -p deploy/scripts
-          cp src/scripts/* deploy/scripts/
+          # copy scripts
+          mkdir -p deploy/src
+          mkdir -p deploy/src/scripts
+          cp -r src/scripts/. deploy/src/scripts/
           
-          # Copy styles
-          mkdir -p deploy/styles
-          cp src/styles/* deploy/styles/
+          # copy styles
+          mkdir -p deploy/src/styles
+          cp -r src/styles/. deploy/src/styles/
           
-          # Copy index.html ke root dan adjust paths
-          cp src/pages/index.html deploy/index.html
+          # copy index.html
+          cp index.html deploy/index.html
+
+          # copy all pages
+          mkdir -p deploy/src/pages
+          cp -r src/pages/. deploy/src/pages/
       
-      - name: Adjust relative paths in HTML files
-        run: |
-          # Adjust paths dari src/pages/ ke root
-          # ./../../assets/ menjadi ./assets/
-          sed -i 's|\.\/\.\.\/\.\.\/#|./|g' deploy/index.html
-          sed -i 's|\./\.\.\/\.\.\/assets|./assets|g' deploy/index.html
-          sed -i 's|\./\.\.\/styles|./styles|g' deploy/index.html
-          sed -i 's|\./\.\.\/scripts|./scripts|g' deploy/index.html
+      # - name: Adjust relative paths in HTML files
+      #   run: |
+      #     # Adjust paths dari src/pages/ ke root
+      #     # ./../../assets/ menjadi ./assets/
+      #     sed -i 's|\.\/\.\.\/\.\.\/#|./|g' deploy/index.html
+      #     sed -i 's|\./\.\.\/\.\.\/assets|./assets|g' deploy/index.html
+      #     sed -i 's|\./\.\.\/styles|./styles|g' deploy/index.html
+      #     sed -i 's|\./\.\.\/scripts|./scripts|g' deploy/index.html
           
-          # Update base href sesuai repo name jika perlu
-          sed -i 's|<base href="khaslana-uts">|<base href="/">|g' deploy/index.html
+      #     # Update base href sesuai repo name jika perlu
+      #     sed -i 's|<base href="khaslana-uts">|<base href="/">|g' deploy/index.html
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

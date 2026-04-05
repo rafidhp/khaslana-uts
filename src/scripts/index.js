@@ -24,8 +24,8 @@ navLink.forEach(link => {
 
 trackingButtons.forEach(btn => {
     const img = btn.querySelector('img');
-    const normalSrc = "./../../assets/arrow-kanan-atas.png";
-    const hoverSrc = "./../../assets/arrow-kanan-atas-hover.png";
+    const normalSrc = "./assets/arrow-kanan-atas.png";
+    const hoverSrc = "./assets/arrow-kanan-atas-hover.png";
 
     btn.addEventListener('mouseenter', () => {
         img.src = hoverSrc;
@@ -38,8 +38,8 @@ trackingButtons.forEach(btn => {
 const communityImage = communityLink.querySelector('img');
 
 communityLink.addEventListener('mouseenter', () => {
-    communityImage.src = "./../../assets/right-arrow-green.png";
+    communityImage.src = "./assets/right-arrow-green.png";
 });
 communityLink.addEventListener('mouseleave', () => {
-    communityImage.src = "./../../assets/right-arrow-dark.png";
+    communityImage.src = "./assets/right-arrow-dark.png";
 });

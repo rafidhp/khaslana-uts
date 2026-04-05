@@ -1,0 +1,48 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up deployment directory
+        run: |
+          mkdir -p deploy
+          
+          # Copy assets
+          cp -r assets deploy/assets
+          
+          # Copy scripts
+          mkdir -p deploy/scripts
+          cp src/scripts/* deploy/scripts/
+          
+          # Copy styles
+          mkdir -p deploy/styles
+          cp src/styles/* deploy/styles/
+          
+          # Copy index.html ke root dan adjust paths
+          cp src/pages/index.html deploy/index.html
+      
+      - name: Adjust relative paths in HTML files
+        run: |
+          # Adjust paths dari src/pages/ ke root
+          # ./../../assets/ menjadi ./assets/
+          sed -i 's|\.\/\.\.\/\.\.\/#|./|g' deploy/index.html
+          sed -i 's|\./\.\.\/\.\.\/assets|./assets|g' deploy/index.html
+          sed -i 's|\./\.\.\/styles|./styles|g' deploy/index.html
+          sed -i 's|\./\.\.\/scripts|./scripts|g' deploy/index.html
+          
+          # Update base href sesuai repo name jika perlu
+          sed -i 's|<base href="khaslana-uts">|<base href="/">|g' deploy/index.html
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy

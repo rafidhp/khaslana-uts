@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCpetype="button"PE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
         <div class="center-navbar">
             <ul>
                 <li><a href="./index.html">Beranda</a></li>
-                <li><a href="/src/pages/katalog/index.html">Katalog</a></li>
+                <li><a href="/src/pages/katalog/index.html" class="navbar-active">Katalog</a></li>
                 <li><a href="/src/pages/umkm/index.html">UMKM</a></li>
                 <li><a href="/src/pages/komunitas/index.html">Komunitas</a></li>
             </ul>
@@ -50,16 +50,16 @@
                 <input type="text" name="seacrh-bar" id="seacrh-bar" placeholder="Apa yang anda cari?">
             </div>
             <div class="katalog-filter">
-                <button class="filter-btn filter-active">Semua</button>
-                <button class="filter-btn">Kerajinan</button>
-                <button class="filter-btn">Fashion</button>
-                <button class="filter-btn">FnB</button>
-                <button class="filter-btn">Jasa</button>
+                <button type="button" class="filter-btn filter-active">Semua</button>
+                <button type="button" class="filter-btn">Kerajinan</button>
+                <button type="button" class="filter-btn">Fashion</button>
+                <button type="button" class="filter-btn">FnB</button>
+                <button type="button" class="filter-btn">Jasa</button>
             </div>
+        </section>
         <!-- Katalog Hero End -->
 
         <!-- Katalog Products Start -->
-        </section>
         <section class="katalog-products">
             <div class="katalog-featured">
                 <div class="katalog-featured-main">
@@ -148,21 +148,25 @@
             <!-- Katalog Products End -->
 
             <!-- Pagination Start -->
-            <div class="katalog-pagination">
-                <a href="#" class="page-btn page-arrow">&lt</a>
-                <a href="#" class="page-btn">1</a>
+           <div class="katalog-pagination">
+                <a href="#" class="page-btn page-arrow">
+                    <img src="./../../../assets/arowl.svg" alt="arrow left">
+                </a>
+                <a href="#" class="page-btn page-active">1</a>
                 <a href="#" class="page-btn">2</a>
                 <a href="#" class="page-btn">3</a>
-                <a href="#" class="page-btn" aria-disabled="true">...</a>
+                <span class="page-dots">...</span>
                 <a href="#" class="page-btn">12</a>
-                <a href="#" class="page-btn page-arrow">&gt</a>
+                <a href="#" class="page-btn page-arrow">
+                    <img src="./../../../assets/arowr.svg" alt="arrow right">
+                </a>
             </div>
             <!-- Pagination End -->
         </section>
      </main>
 
      <footer class="footer">
-        <div class="fooetr-container">
+        <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
                     <div class="footer-logo">
@@ -186,7 +190,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-links group">
+                <div class="footer-links-group">
                     <div class="footer-links-column">
                          <h5 class="footer-col-title">Layanan</h5>
                         <ul>
@@ -198,11 +202,49 @@
                     <div class="footer-links-column">
                          <h5 class="footer-col-title">Sumber Daya</h5>
                         <ul>
-                            <li><a href="/src/pages/katalog/index.html">Kebijakan Privasi</a></li>
-                            <li><a href="/src/pages/umkm/index.html">Syarat dan Ketentuan</a></li>
-                            <li><a href="/src/pages/komunitas/index.html">FAQ</a></li>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                            <li><a href="#">Syarat dan Ketentuan</a></li>
                         </ul>
                     </div>
+                    <div class="footer-links-column">
+                         <h5 class="footer-col-title">Kontak</h5>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <span class="contact-icon">
+                                    <img src="./../../../assets/location_icon.svg" alt="location_icon">
+                                </span>
+                                <span>
+                                    Cibiru, Jawa Barat, Indonesia
+                                </span>
+                            </li>
+                            <li>
+                                <span class="contact-icon">
+                                    <img src="./../../../assets/phone_icon.svg" alt="phone_icon">
+                                </span>
+                                <span>
+                                    +62 858 6028 2313
+                                </span>
+                            </li>
+                            <li>
+                                <span class="contact-icon">
+                                    <img src="./../../../assets/mail_icon.svg" alt="mail_icon">
+                                </span>
+                                <span>
+                                    hello@khaslana.id
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Khaslana UMKM Digital.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Kebijakan Privasi</a>
                 </div>
             </div>
         </div>

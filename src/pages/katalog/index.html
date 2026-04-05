@@ -8,27 +8,38 @@
     <title>Khaslana</title>
 </head>
 <body>
-    <!-- Navbar Start -->
-    <nav class="navbar">
-        <div class="left-navbar">
-            <img src="./../../../assets/Khaslana.svg" alt="logo-khaslana" class="navbar-logo">
-            <div class="logo name">Khaslana</div>
+    <!-- navbar start -->
+     <nav class="navbar">
+        <div class="navbar-left">
+            <img
+                src="./../../../assets/khaslana-logo-green.png"
+                alt="Logo Khaslana"
+                class="navbar-logo"
+            />    
+            <div class="logo-name">Khaslana</div>
         </div>
-        <div class="center-navbar">
+        <div class="navbar-mid">
             <ul>
-                <li><a href="./index.html">Beranda</a></li>
-                <li><a href="/src/pages/katalog/index.html" class="navbar-active">Katalog</a></li>
-                <li><a href="/src/pages/umkm/index.html">UMKM</a></li>
-                <li><a href="/src/pages/komunitas/index.html">Komunitas</a></li>
+                <li class="mobile-profile">
+                    <img src="./../../../assets/katalog/profile.png" alt="user profile">
+                    <span>My Profile</span>
+                </li>
+                <li><a href="./../../../index.html" class="navbar-active">Beranda</a></li>
+                <li><a href="./../katalog/index.html">Katalog</a></li>
+                <li><a href="#">UMKM</a></li>
+                <li><a href="./../komunitas/index.html">Komunitas</a></li>
             </ul>
         </div>
-        <div class="right-navbar">
-            <a href="#"><img src="./../../../assets/notif.svg" alt="Notifikasi"></a>
-            <a href="#"><img src="./../../../assets/nav-cart.svg" alt="Cart"></a>
-            <a href="#"><img src="./../../../assets/Ai.jpg" alt="Profile"></a>
+        <div class="navbar-right">
+            <img src="./../../../assets/katalog/notif.svg" alt="notification">
+            <img src="./../../../assets/katalog/cart.png" alt="cart png">
+            <img src="./../../../assets/katalog/profile.png" class="profile desktop-only" alt="user profile">
+            <div class="navbar-toggle">
+                <img src="./../../../assets/hamburger.png" alt="menu">
+            </div>
         </div>
     </nav>
-    <!-- Navbar End -->
+    <!-- navbar end -->
     <main class="main">
         <!-- Katalog Hero Start -->
         <section class="katalog-hero">
@@ -249,5 +260,6 @@
             </div>
         </div>
      </footer>
+     <script src="./../../scripts/katalog/katalog.js"></script>
 </body>
 </html>
